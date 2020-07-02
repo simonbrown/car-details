@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 namespace car_details.Controllers
 {
     [ApiController]
-    [Route("car/{registration}")]
+    [Route("api/car/{registration}")]
     public class CarController : ControllerBase
     {
         [HttpGet]
