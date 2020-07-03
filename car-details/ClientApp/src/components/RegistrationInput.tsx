@@ -26,16 +26,24 @@ export class RegistrationInput extends Component<Props, State> {
         });
     }
 
+    isValid() {
+        return this.state.registration.match(/[a-zA-Z]{2}[0-9]{2} ?[a-zA-Z]{3}/g);
+    }
+
     handleSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         this.props.onSubmit(this.state.registration);
     }
 
     render() {
+        let content = this.isValid()
+            ? <input type='submit' />
+            : <span>Invalid registration</span>
+
         return (
             <form onSubmit={this.handleSubmit}>
                 <input type='text' value={this.state.registration} onChange={this.handleChange} />
-                <input type='submit' />
+                {content}
             </form>
         );
     }
