@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.ReactDevelopmentServer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System;
 
 namespace car_details
 {
@@ -59,6 +60,7 @@ namespace car_details
 
             app.UseSpa(spa =>
             {
+                spa.Options.StartupTimeout = TimeSpan.FromSeconds(120);
                 spa.Options.SourcePath = "ClientApp";
 
                 if (env.IsDevelopment())
