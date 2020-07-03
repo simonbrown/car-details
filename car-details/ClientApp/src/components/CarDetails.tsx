@@ -8,7 +8,7 @@ type Props = {};
 
 type State = {
     car?: Car,
-    registration: string,
+    registration: string | null,
     loading: boolean
 };
 
@@ -17,20 +17,26 @@ export class CarDetails extends Component<Props, State> {
         super(props);
         this.state = {
             loading: true,
-            registration: ''
+            registration: null
         };
 
         this.formSubmit = this.formSubmit.bind(this);
     }
 
     formSubmit(registration: string) {
+        this.setState({ registration });
         this.populateCarData(registration);
     }
 
     render() {
-        let contents = !this.state.car
-            ? <p><em>Loading...</em></p>
-            : <CarDetailTable car={this.state.car}></CarDetailTable>;
+        let contents;
+        if (this.state.registration) {
+            contents = !this.state.car
+                ? <p><em>Loading...</em></p>
+                : <CarDetailTable car={this.state.car}></CarDetailTable>;
+        } else {
+            contents = <p></p>;
+        }
 
         return (
             <div>
