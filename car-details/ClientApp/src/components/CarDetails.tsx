@@ -51,7 +51,10 @@ export class CarDetails extends Component<Props, State> {
         const response = await fetch('/api/car/' + registration_no_spaces);
         const data = await response.json();
         const carDetails = data[0];
-        const latestMOT = carDetails['motTests'][0];
+        const motTests = carDetails['motTests'];
+        const latestMOT = motTests[0];
+
+        const noMotsPassed = motTests.filter((test : any) => test['testResult'] === 'PASSED').length;
 
         this.setState({
             loading: false,
@@ -61,7 +64,8 @@ export class CarDetails extends Component<Props, State> {
                 primaryColour: carDetails["primaryColour"],
                 motExpiryDate: latestMOT["expiryDate"],
                 odometerValue: parseInt(latestMOT["odometerValue"]),
-                odometerUnit: latestMOT["odometerUnit"]
+                odometerUnit: latestMOT["odometerUnit"],
+                passRate: noMotsPassed / motTests.length
             }
         });
     }
