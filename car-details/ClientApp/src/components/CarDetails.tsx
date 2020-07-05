@@ -40,8 +40,6 @@ export class CarDetails extends Component<Props, State> {
 
         return (
             <div>
-                <h1 id="tabelLabel" >Weather forecast</h1>
-                <p>This component demonstrates fetching data from the server.</p>
                 <RegistrationInput onSubmit={this.formSubmit}></RegistrationInput>
                 {contents}
             </div>
@@ -51,6 +49,7 @@ export class CarDetails extends Component<Props, State> {
     async populateCarData(registration: string) {
         const registration_no_spaces = registration.replace(' ', '');
         const response = await fetch('/api/car/' + registration_no_spaces);
+        console.log("response", response);
         const data = await response.json();
         const carDetails = data[0];
         const latestMOT = carDetails['motTests'][0];
@@ -62,7 +61,7 @@ export class CarDetails extends Component<Props, State> {
                 model: carDetails["model"],
                 primaryColour: carDetails["primaryColour"],
                 motExpiryDate: latestMOT["expiryDate"],
-                odometerValue: latestMOT["odometerValue"],
+                odometerValue: parseInt(latestMOT["odometerValue"]),
                 odometerUnit: latestMOT["odometerUnit"]
             }
         });

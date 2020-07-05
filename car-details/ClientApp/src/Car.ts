@@ -2,7 +2,7 @@
     make?: string;
     model?: string;
     primaryColour?: string;
-    motExpiryDate?: Date;
+    motExpiryDate?: string; // This is a string because that's what the API returns
     odometerValue?: number;
     odometerUnit?: string;
 };
