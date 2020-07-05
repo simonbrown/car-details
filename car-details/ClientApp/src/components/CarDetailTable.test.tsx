@@ -21,5 +21,5 @@ it('should show car details', async () => {
     expect(await screen.findByText(/Fiesta/)).toBeInTheDocument();
     expect(await screen.findByText(/Orange/)).toBeInTheDocument();
     expect(await screen.findByText(/2017.02.03/)).toBeInTheDocument();
-    expect(await screen.findByText(/8000 mi/)).toBeInTheDocument();
+    expect(await screen.findByText(/8,000 mi/)).toBeInTheDocument();
 })

@@ -27,7 +27,7 @@ export class CarDetailTable extends Component<Props, State> {
                         <td>{this.props.car.model}</td>
                         <td>{this.props.car.primaryColour}</td>
                         <td>{this.props.car.motExpiryDate}</td>
-                        <td>{this.props.car.odometerValue} {this.props.car.odometerUnit}</td>
+                        <td>{this.props.car.odometerValue?.toLocaleString()} {this.props.car.odometerUnit}</td>
                     </tr>
                 </tbody>
             </table>
