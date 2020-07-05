@@ -36,13 +36,19 @@ export class RegistrationInput extends Component<Props, State> {
     }
 
     render() {
-        let content = this.isValid()
-            ? <input type='submit' value='Submit' />
-            : <span>Invalid registration</span>
+        let content;
+        if (this.state.registration !== '') {
+            content = this.isValid()
+                ? <input type='submit' value='Submit' />
+                : <span>Invalid registration</span>
+        } else {
+            content = <span></span>
+        }
 
         return (
             <form onSubmit={this.handleSubmit}>
-                <input type='text' value={this.state.registration} onChange={this.handleChange} />
+                <label htmlFor='registration_textbox'>Registration:</label>&nbsp;
+                <input id='registration_textbox' type='text' value={this.state.registration} onChange={this.handleChange} />&nbsp;
                 {content}
             </form>
         );
