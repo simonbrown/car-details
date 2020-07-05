@@ -37,7 +37,7 @@ export class RegistrationInput extends Component<Props, State> {
 
     render() {
         let content = this.isValid()
-            ? <input type='submit' />
+            ? <input type='submit' value='Submit' />
             : <span>Invalid registration</span>
 
         return (
