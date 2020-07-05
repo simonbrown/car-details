@@ -14,7 +14,7 @@ namespace car_details.Controllers
     public class CarController : ControllerBase
     {
         [HttpGet]
-        public string Get(string registration)
+        public ActionResult<string> Get(string registration)
         {
             String requestUrlTemplate = "https://beta.check-mot.service.gov.uk/trade/vehicles/mot-tests?registration={0}";
             String requestUrl = String.Format(requestUrlTemplate, registration);
@@ -25,16 +25,32 @@ namespace car_details.Controllers
                 throw new ApplicationException("MOT_API_KEY not specified");
             }
 
-            WebRequest request = WebRequest.Create(requestUrl);
-            request.Headers.Add("x-api-key", mot_api_key);
-
-            using (WebResponse webResponse = request.GetResponse())
+            try
             {
-                StreamReader reader = new StreamReader(webResponse.GetResponseStream());
-                string responseStr = reader.ReadToEnd();
-                reader.Close();
+                WebRequest request = WebRequest.Create(requestUrl);
+                request.Headers.Add("x-api-key", mot_api_key);
 
-                return responseStr;
+                using (WebResponse webResponse = request.GetResponse())
+                {
+                    StreamReader reader = new StreamReader(webResponse.GetResponseStream());
+                    string responseStr = reader.ReadToEnd();
+                    reader.Close();
+
+                    return responseStr;
+                }
+            }
+            catch (WebException exp)
+            {
+                using (HttpWebResponse response = (HttpWebResponse)exp.Response)
+                {
+                    if (response.StatusCode == HttpStatusCode.NotFound)
+                    {
+                        return NotFound();
+                    } else
+                    {
+                        return StatusCode(500);
+                    }
+                }
             }
         }
     }
