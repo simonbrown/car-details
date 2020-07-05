@@ -49,7 +49,6 @@ export class CarDetails extends Component<Props, State> {
     async populateCarData(registration: string) {
         const registration_no_spaces = registration.replace(' ', '');
         const response = await fetch('/api/car/' + registration_no_spaces);
-        console.log("response", response);
         const data = await response.json();
         const carDetails = data[0];
         const latestMOT = carDetails['motTests'][0];
