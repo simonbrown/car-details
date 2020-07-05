@@ -27,7 +27,7 @@ export class RegistrationInput extends Component<Props, State> {
     }
 
     isValid() {
-        return this.state.registration.match(/[a-zA-Z]{2}[0-9]{2} ?[a-zA-Z]{3}/g);
+        return this.state.registration.match(/\b[a-zA-Z]{2}[0-9]{2} ?[a-zA-Z]{3}\b/);
     }
 
     handleSubmit(event: React.FormEvent<HTMLFormElement>) {
