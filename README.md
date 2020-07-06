@@ -10,7 +10,8 @@ The server side is a simple proxy of this API.
 Apply for an API key [here](https://www.smartsurvey.co.uk/s/MOT_History_TradeAPI_Access_and_Support?), set the MOT_API_KEY environment variable and then run the server using `dotnet start`
 
 ```export MOT_API_KEY=xxx
-dotnet run```
+dotnet run
+```
 
 **Features:**
 
