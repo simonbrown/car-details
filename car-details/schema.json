@@ -1,0 +1,891 @@
+﻿{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "array",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": [],
+  "examples": [
+    [
+      {
+        "registration": "YC08JWU",
+        "make": "FORD",
+        "model": "MONDEO",
+        "firstUsedDate": "2008.04.17",
+        "fuelType": "Diesel",
+        "primaryColour": "Silver",
+        "motTests": [
+          {
+            "completedDate": "2019.06.11 12:46:34",
+            "testResult": "PASSED",
+            "expiryDate": "2020.12.10",
+            "odometerValue": "117854",
+            "odometerUnit": "mi",
+            "motTestNumber": "301759864670",
+            "rfrAndComments": []
+          },
+          {
+            "completedDate": "2019.06.10 14:22:41",
+            "testResult": "FAILED",
+            "odometerValue": "117851",
+            "odometerUnit": "mi",
+            "motTestNumber": "135781865215",
+            "rfrAndComments": [
+              {
+                "text": "Nearside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                "type": "FAIL"
+              },
+              {
+                "text": "Offside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                "type": "FAIL"
+              },
+              {
+                "text": "Offside Registration plate lamp inoperative in the case of multiple lamps or light sources (4.7.1 (b) (i))",
+                "type": "MINOR"
+              }
+            ]
+          },
+          {
+            "completedDate": "2018.12.04 09:16:14",
+            "testResult": "PASSED",
+            "expiryDate": "2019.12.12",
+            "odometerValue": "116670",
+            "odometerUnit": "mi",
+            "motTestNumber": "592086214342",
+            "rfrAndComments": []
+          },
+          {
+            "completedDate": "2018.12.04 09:16:13",
+            "testResult": "FAILED",
+            "odometerValue": "116670",
+            "odometerUnit": "mi",
+            "motTestNumber": "219699932594",
+            "rfrAndComments": [
+              {
+                "text": "Nearside Track rod end ball joint has excessive play (2.1.3 (b) (i))",
+                "type": "PRS"
+              },
+              {
+                "text": "Offside Stop lamp(s) all not working (4.3.1 (a) (iii))",
+                "type": "PRS"
+              },
+              {
+                "text": "Front Windscreen wiper does not clear the windscreen effectively (3.4 (b) (ii))",
+                "type": "PRS"
+              }
+            ]
+          },
+          {
+            "completedDate": "2017.12.06 09:25:22",
+            "testResult": "PASSED",
+            "expiryDate": "2018.12.12",
+            "odometerValue": "110854",
+            "odometerUnit": "mi",
+            "motTestNumber": "744238405896",
+            "rfrAndComments": []
+          },
+          {
+            "completedDate": "2016.12.13 12:08:10",
+            "testResult": "PASSED",
+            "expiryDate": "2017.12.12",
+            "odometerValue": "105244",
+            "odometerUnit": "mi",
+            "motTestNumber": "720264836161",
+            "rfrAndComments": []
+          },
+          {
+            "completedDate": "2016.12.13 09:22:48",
+            "testResult": "FAILED",
+            "odometerValue": "105232",
+            "odometerUnit": "mi",
+            "motTestNumber": "505124510669",
+            "rfrAndComments": [
+              {
+                "text": "Horn not working (1.6.2a)",
+                "type": "FAIL"
+              }
+            ]
+          },
+          {
+            "completedDate": "2015.11.18 14:46:06",
+            "testResult": "PASSED",
+            "expiryDate": "2016.12.10",
+            "odometerValue": "93940",
+            "odometerUnit": "mi",
+            "motTestNumber": "577570797789",
+            "rfrAndComments": [
+              {
+                "text": "Nearside Obligatory mirror damaged, but not seriously affecting the rear view (8.1.2a)",
+                "type": "ADVISORY"
+              }
+            ]
+          },
+          {
+            "completedDate": "2015.11.18 14:46:05",
+            "testResult": "FAILED",
+            "odometerValue": "93940",
+            "odometerUnit": "mi",
+            "motTestNumber": "437850808139",
+            "rfrAndComments": [
+              {
+                "text": "Horn not working (1.6.2a)",
+                "type": "PRS"
+              },
+              {
+                "text": "Nearside Stop lamp not working (1.2.1b)",
+                "type": "PRS"
+              },
+              {
+                "text": "Nearside Obligatory mirror damaged, but not seriously affecting the rear view (8.1.2a)",
+                "type": "ADVISORY"
+              }
+            ]
+          },
+          {
+            "completedDate": "2014.11.27 14:13:55",
+            "testResult": "PASSED",
+            "expiryDate": "2015.12.10",
+            "odometerValue": "84631",
+            "odometerUnit": "mi",
+            "motTestNumber": "258361834307",
+            "rfrAndComments": [
+              {
+                "text": "Nearside Trailing arm rubber bush deteriorated but not resulting in excessive movement (2.4.G.2)",
+                "type": "ADVISORY"
+              },
+              {
+                "text": "Offside Trailing arm rubber bush deteriorated but not resulting in excessive movement (2.4.G.2)",
+                "type": "ADVISORY"
+              }
+            ]
+          },
+          {
+            "completedDate": "2013.12.11 15:23:21",
+            "testResult": "PASSED",
+            "expiryDate": "2014.12.10",
+            "odometerValue": "80822",
+            "odometerUnit": "mi",
+            "motTestNumber": "897295243322",
+            "rfrAndComments": [
+              {
+                "text": "Nearside Front Tyre worn close to the legal limit (4.1.E.1)",
+                "type": "ADVISORY"
+              },
+              {
+                "text": "Offside Front Tyre worn close to the legal limit (4.1.E.1)",
+                "type": "ADVISORY"
+              },
+              {
+                "text": "Rear Brake pad(s) wearing thin (3.5.1g)",
+                "type": "ADVISORY"
+              }
+            ]
+          },
+          {
+            "completedDate": "2013.06.05 15:56:51",
+            "testResult": "PASSED",
+            "expiryDate": "2014.06.13",
+            "odometerValue": "76057",
+            "odometerUnit": "mi",
+            "motTestNumber": "657226953111",
+            "rfrAndComments": []
+          },
+          {
+            "completedDate": "2012.06.08 13:47:35",
+            "testResult": "PASSED",
+            "expiryDate": "2013.06.13",
+            "odometerValue": "69794",
+            "odometerUnit": "mi",
+            "motTestNumber": "836830762102",
+            "rfrAndComments": [
+              {
+                "text": "Offside Front Tyre worn close to the legal limit (4.1.E.1)",
+                "type": "ADVISORY"
+              }
+            ]
+          },
+          {
+            "completedDate": "2011.06.14 08:53:59",
+            "testResult": "PASSED",
+            "expiryDate": "2012.06.13",
+            "odometerValue": "62509",
+            "odometerUnit": "mi",
+            "motTestNumber": "298905561470",
+            "rfrAndComments": []
+          },
+          {
+            "completedDate": "2011.04.14 15:30:31",
+            "testResult": "PASSED",
+            "expiryDate": "2012.04.17",
+            "odometerValue": "62388",
+            "odometerUnit": "mi",
+            "motTestNumber": "305604701109",
+            "rfrAndComments": []
+          },
+          {
+            "completedDate": "2011.04.14 12:35:23",
+            "testResult": "FAILED",
+            "odometerValue": "62388",
+            "odometerUnit": "mi",
+            "motTestNumber": "108384901163",
+            "rfrAndComments": [
+              {
+                "text": "Nearside Windscreen wiper does not clear the windscreen effectively (8.2.2)",
+                "type": "FAIL"
+              },
+              {
+                "text": "Offside Windscreen wiper does not clear the windscreen effectively (8.2.2)",
+                "type": "FAIL"
+              },
+              {
+                "text": "Front Brake pad(s) wearing thin (3.5.1g)",
+                "type": "ADVISORY"
+              },
+              {
+                "text": "front discs worn",
+                "type": "USER ENTERED"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  ],
+  "additionalItems": true,
+  "items": {
+    "anyOf": [
+      {
+        "$id": "#/items/anyOf/0",
+        "type": "object",
+        "title": "The first anyOf schema",
+        "description": "An explanation about the purpose of this instance.",
+        "default": {},
+        "examples": [
+          {
+            "registration": "YC08JWU",
+            "make": "FORD",
+            "model": "MONDEO",
+            "firstUsedDate": "2008.04.17",
+            "fuelType": "Diesel",
+            "primaryColour": "Silver",
+            "motTests": [
+              {
+                "completedDate": "2019.06.11 12:46:34",
+                "testResult": "PASSED",
+                "expiryDate": "2020.12.10",
+                "odometerValue": "117854",
+                "odometerUnit": "mi",
+                "motTestNumber": "301759864670",
+                "rfrAndComments": []
+              },
+              {
+                "completedDate": "2019.06.10 14:22:41",
+                "testResult": "FAILED",
+                "odometerValue": "117851",
+                "odometerUnit": "mi",
+                "motTestNumber": "135781865215",
+                "rfrAndComments": [
+                  {
+                    "text": "Nearside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                    "type": "FAIL"
+                  },
+                  {
+                    "text": "Offside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                    "type": "FAIL"
+                  },
+                  {
+                    "text": "Offside Registration plate lamp inoperative in the case of multiple lamps or light sources (4.7.1 (b) (i))",
+                    "type": "MINOR"
+                  }
+                ]
+              },
+              {
+                "completedDate": "2018.12.04 09:16:14",
+                "testResult": "PASSED",
+                "expiryDate": "2019.12.12",
+                "odometerValue": "116670",
+                "odometerUnit": "mi",
+                "motTestNumber": "592086214342",
+                "rfrAndComments": []
+              },
+              {
+                "completedDate": "2018.12.04 09:16:13",
+                "testResult": "FAILED",
+                "odometerValue": "116670",
+                "odometerUnit": "mi",
+                "motTestNumber": "219699932594",
+                "rfrAndComments": [
+                  {
+                    "text": "Nearside Track rod end ball joint has excessive play (2.1.3 (b) (i))",
+                    "type": "PRS"
+                  },
+                  {
+                    "text": "Offside Stop lamp(s) all not working (4.3.1 (a) (iii))",
+                    "type": "PRS"
+                  },
+                  {
+                    "text": "Front Windscreen wiper does not clear the windscreen effectively (3.4 (b) (ii))",
+                    "type": "PRS"
+                  }
+                ]
+              },
+              {
+                "completedDate": "2017.12.06 09:25:22",
+                "testResult": "PASSED",
+                "expiryDate": "2018.12.12",
+                "odometerValue": "110854",
+                "odometerUnit": "mi",
+                "motTestNumber": "744238405896",
+                "rfrAndComments": []
+              },
+              {
+                "completedDate": "2016.12.13 12:08:10",
+                "testResult": "PASSED",
+                "expiryDate": "2017.12.12",
+                "odometerValue": "105244",
+                "odometerUnit": "mi",
+                "motTestNumber": "720264836161",
+                "rfrAndComments": []
+              },
+              {
+                "completedDate": "2016.12.13 09:22:48",
+                "testResult": "FAILED",
+                "odometerValue": "105232",
+                "odometerUnit": "mi",
+                "motTestNumber": "505124510669",
+                "rfrAndComments": [
+                  {
+                    "text": "Horn not working (1.6.2a)",
+                    "type": "FAIL"
+                  }
+                ]
+              },
+              {
+                "completedDate": "2015.11.18 14:46:06",
+                "testResult": "PASSED",
+                "expiryDate": "2016.12.10",
+                "odometerValue": "93940",
+                "odometerUnit": "mi",
+                "motTestNumber": "577570797789",
+                "rfrAndComments": [
+                  {
+                    "text": "Nearside Obligatory mirror damaged, but not seriously affecting the rear view (8.1.2a)",
+                    "type": "ADVISORY"
+                  }
+                ]
+              },
+              {
+                "completedDate": "2015.11.18 14:46:05",
+                "testResult": "FAILED",
+                "odometerValue": "93940",
+                "odometerUnit": "mi",
+                "motTestNumber": "437850808139",
+                "rfrAndComments": [
+                  {
+                    "text": "Horn not working (1.6.2a)",
+                    "type": "PRS"
+                  },
+                  {
+                    "text": "Nearside Stop lamp not working (1.2.1b)",
+                    "type": "PRS"
+                  },
+                  {
+                    "text": "Nearside Obligatory mirror damaged, but not seriously affecting the rear view (8.1.2a)",
+                    "type": "ADVISORY"
+                  }
+                ]
+              },
+              {
+                "completedDate": "2014.11.27 14:13:55",
+                "testResult": "PASSED",
+                "expiryDate": "2015.12.10",
+                "odometerValue": "84631",
+                "odometerUnit": "mi",
+                "motTestNumber": "258361834307",
+                "rfrAndComments": [
+                  {
+                    "text": "Nearside Trailing arm rubber bush deteriorated but not resulting in excessive movement (2.4.G.2)",
+                    "type": "ADVISORY"
+                  },
+                  {
+                    "text": "Offside Trailing arm rubber bush deteriorated but not resulting in excessive movement (2.4.G.2)",
+                    "type": "ADVISORY"
+                  }
+                ]
+              },
+              {
+                "completedDate": "2013.12.11 15:23:21",
+                "testResult": "PASSED",
+                "expiryDate": "2014.12.10",
+                "odometerValue": "80822",
+                "odometerUnit": "mi",
+                "motTestNumber": "897295243322",
+                "rfrAndComments": [
+                  {
+                    "text": "Nearside Front Tyre worn close to the legal limit (4.1.E.1)",
+                    "type": "ADVISORY"
+                  },
+                  {
+                    "text": "Offside Front Tyre worn close to the legal limit (4.1.E.1)",
+                    "type": "ADVISORY"
+                  },
+                  {
+                    "text": "Rear Brake pad(s) wearing thin (3.5.1g)",
+                    "type": "ADVISORY"
+                  }
+                ]
+              },
+              {
+                "completedDate": "2013.06.05 15:56:51",
+                "testResult": "PASSED",
+                "expiryDate": "2014.06.13",
+                "odometerValue": "76057",
+                "odometerUnit": "mi",
+                "motTestNumber": "657226953111",
+                "rfrAndComments": []
+              },
+              {
+                "completedDate": "2012.06.08 13:47:35",
+                "testResult": "PASSED",
+                "expiryDate": "2013.06.13",
+                "odometerValue": "69794",
+                "odometerUnit": "mi",
+                "motTestNumber": "836830762102",
+                "rfrAndComments": [
+                  {
+                    "text": "Offside Front Tyre worn close to the legal limit (4.1.E.1)",
+                    "type": "ADVISORY"
+                  }
+                ]
+              },
+              {
+                "completedDate": "2011.06.14 08:53:59",
+                "testResult": "PASSED",
+                "expiryDate": "2012.06.13",
+                "odometerValue": "62509",
+                "odometerUnit": "mi",
+                "motTestNumber": "298905561470",
+                "rfrAndComments": []
+              },
+              {
+                "completedDate": "2011.04.14 15:30:31",
+                "testResult": "PASSED",
+                "expiryDate": "2012.04.17",
+                "odometerValue": "62388",
+                "odometerUnit": "mi",
+                "motTestNumber": "305604701109",
+                "rfrAndComments": []
+              },
+              {
+                "completedDate": "2011.04.14 12:35:23",
+                "testResult": "FAILED",
+                "odometerValue": "62388",
+                "odometerUnit": "mi",
+                "motTestNumber": "108384901163",
+                "rfrAndComments": [
+                  {
+                    "text": "Nearside Windscreen wiper does not clear the windscreen effectively (8.2.2)",
+                    "type": "FAIL"
+                  },
+                  {
+                    "text": "Offside Windscreen wiper does not clear the windscreen effectively (8.2.2)",
+                    "type": "FAIL"
+                  },
+                  {
+                    "text": "Front Brake pad(s) wearing thin (3.5.1g)",
+                    "type": "ADVISORY"
+                  },
+                  {
+                    "text": "front discs worn",
+                    "type": "USER ENTERED"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "required": [
+          "registration",
+          "make",
+          "model",
+          "firstUsedDate",
+          "fuelType",
+          "primaryColour",
+          "motTests"
+        ],
+        "additionalProperties": true,
+        "properties": {
+          "registration": {
+            "$id": "#/items/anyOf/0/properties/registration",
+            "type": "string",
+            "title": "The registration schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "YC08JWU"
+            ]
+          },
+          "make": {
+            "$id": "#/items/anyOf/0/properties/make",
+            "type": "string",
+            "title": "The make schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "FORD"
+            ]
+          },
+          "model": {
+            "$id": "#/items/anyOf/0/properties/model",
+            "type": "string",
+            "title": "The model schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "MONDEO"
+            ]
+          },
+          "firstUsedDate": {
+            "$id": "#/items/anyOf/0/properties/firstUsedDate",
+            "type": "string",
+            "title": "The firstUsedDate schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "2008.04.17"
+            ]
+          },
+          "fuelType": {
+            "$id": "#/items/anyOf/0/properties/fuelType",
+            "type": "string",
+            "title": "The fuelType schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Diesel"
+            ]
+          },
+          "primaryColour": {
+            "$id": "#/items/anyOf/0/properties/primaryColour",
+            "type": "string",
+            "title": "The primaryColour schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "Silver"
+            ]
+          },
+          "motTests": {
+            "$id": "#/items/anyOf/0/properties/motTests",
+            "type": "array",
+            "title": "The motTests schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": [],
+            "examples": [
+              [
+                {
+                  "completedDate": "2019.06.11 12:46:34",
+                  "testResult": "PASSED",
+                  "expiryDate": "2020.12.10",
+                  "odometerValue": "117854",
+                  "odometerUnit": "mi",
+                  "motTestNumber": "301759864670",
+                  "rfrAndComments": []
+                },
+                {
+                  "completedDate": "2019.06.10 14:22:41",
+                  "testResult": "FAILED",
+                  "odometerValue": "117851",
+                  "odometerUnit": "mi",
+                  "motTestNumber": "135781865215",
+                  "rfrAndComments": [
+                    {
+                      "text": "Nearside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                      "type": "FAIL"
+                    },
+                    {
+                      "text": "Offside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                      "type": "FAIL"
+                    },
+                    {
+                      "text": "Offside Registration plate lamp inoperative in the case of multiple lamps or light sources (4.7.1 (b) (i))",
+                      "type": "MINOR"
+                    }
+                  ]
+                }
+              ]
+            ],
+            "additionalItems": true,
+            "items": {
+              "anyOf": [
+                {
+                  "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0",
+                  "type": "object",
+                  "title": "The first anyOf schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": {},
+                  "examples": [
+                    {
+                      "completedDate": "2019.06.11 12:46:34",
+                      "testResult": "PASSED",
+                      "expiryDate": "2020.12.10",
+                      "odometerValue": "117854",
+                      "odometerUnit": "mi",
+                      "motTestNumber": "301759864670",
+                      "rfrAndComments": []
+                    }
+                  ],
+                  "required": [
+                    "completedDate",
+                    "testResult",
+                    "expiryDate",
+                    "odometerValue",
+                    "odometerUnit",
+                    "motTestNumber",
+                    "rfrAndComments"
+                  ],
+                  "additionalProperties": true,
+                  "properties": {
+                    "completedDate": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0/properties/completedDate",
+                      "type": "string",
+                      "title": "The completedDate schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "2019.06.11 12:46:34"
+                      ]
+                    },
+                    "testResult": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0/properties/testResult",
+                      "type": "string",
+                      "title": "The testResult schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "PASSED"
+                      ]
+                    },
+                    "expiryDate": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0/properties/expiryDate",
+                      "type": "string",
+                      "title": "The expiryDate schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "2020.12.10"
+                      ]
+                    },
+                    "odometerValue": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0/properties/odometerValue",
+                      "type": "string",
+                      "title": "The odometerValue schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "117854"
+                      ]
+                    },
+                    "odometerUnit": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0/properties/odometerUnit",
+                      "type": "string",
+                      "title": "The odometerUnit schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "mi"
+                      ]
+                    },
+                    "motTestNumber": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0/properties/motTestNumber",
+                      "type": "string",
+                      "title": "The motTestNumber schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "301759864670"
+                      ]
+                    },
+                    "rfrAndComments": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0/properties/rfrAndComments",
+                      "type": "array",
+                      "title": "The rfrAndComments schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": [],
+                      "examples": [
+                        []
+                      ],
+                      "additionalItems": true,
+                      "items": {
+                        "anyOf": [],
+                        "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/0/properties/rfrAndComments/items"
+                      }
+                    }
+                  }
+                },
+                {
+                  "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1",
+                  "type": "object",
+                  "title": "The second anyOf schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": {},
+                  "examples": [
+                    {
+                      "completedDate": "2019.06.10 14:22:41",
+                      "testResult": "FAILED",
+                      "odometerValue": "117851",
+                      "odometerUnit": "mi",
+                      "motTestNumber": "135781865215",
+                      "rfrAndComments": [
+                        {
+                          "text": "Nearside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                          "type": "FAIL"
+                        },
+                        {
+                          "text": "Offside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                          "type": "FAIL"
+                        },
+                        {
+                          "text": "Offside Registration plate lamp inoperative in the case of multiple lamps or light sources (4.7.1 (b) (i))",
+                          "type": "MINOR"
+                        }
+                      ]
+                    }
+                  ],
+                  "required": [
+                    "completedDate",
+                    "testResult",
+                    "odometerValue",
+                    "odometerUnit",
+                    "motTestNumber",
+                    "rfrAndComments"
+                  ],
+                  "additionalProperties": true,
+                  "properties": {
+                    "completedDate": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/completedDate",
+                      "type": "string",
+                      "title": "The completedDate schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "2019.06.10 14:22:41"
+                      ]
+                    },
+                    "testResult": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/testResult",
+                      "type": "string",
+                      "title": "The testResult schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "FAILED"
+                      ]
+                    },
+                    "odometerValue": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/odometerValue",
+                      "type": "string",
+                      "title": "The odometerValue schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "117851"
+                      ]
+                    },
+                    "odometerUnit": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/odometerUnit",
+                      "type": "string",
+                      "title": "The odometerUnit schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "mi"
+                      ]
+                    },
+                    "motTestNumber": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/motTestNumber",
+                      "type": "string",
+                      "title": "The motTestNumber schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "135781865215"
+                      ]
+                    },
+                    "rfrAndComments": {
+                      "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/rfrAndComments",
+                      "type": "array",
+                      "title": "The rfrAndComments schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": [],
+                      "examples": [
+                        [
+                          {
+                            "text": "Nearside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                            "type": "FAIL"
+                          },
+                          {
+                            "text": "Offside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                            "type": "FAIL"
+                          }
+                        ]
+                      ],
+                      "additionalItems": true,
+                      "items": {
+                        "anyOf": [
+                          {
+                            "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/rfrAndComments/items/anyOf/0",
+                            "type": "object",
+                            "title": "The first anyOf schema",
+                            "description": "An explanation about the purpose of this instance.",
+                            "default": {},
+                            "examples": [
+                              {
+                                "text": "Nearside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))",
+                                "type": "FAIL"
+                              }
+                            ],
+                            "required": [
+                              "text",
+                              "type"
+                            ],
+                            "additionalProperties": true,
+                            "properties": {
+                              "text": {
+                                "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/rfrAndComments/items/anyOf/0/properties/text",
+                                "type": "string",
+                                "title": "The text schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                  "Nearside Front Upper Anti-roll bar ball joint dust cover no longer prevents the ingress of dirt (5.3.4 (b) (ii))"
+                                ]
+                              },
+                              "type": {
+                                "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/rfrAndComments/items/anyOf/0/properties/type",
+                                "type": "string",
+                                "title": "The type schema",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                  "FAIL"
+                                ]
+                              }
+                            }
+                          }
+                        ],
+                        "$id": "#/items/anyOf/0/properties/motTests/items/anyOf/1/properties/rfrAndComments/items"
+                      }
+                    }
+                  }
+                }
+              ],
+              "$id": "#/items/anyOf/0/properties/motTests/items"
+            }
+          }
+        }
+      }
+    ],
+    "$id": "#/items"
+  }
+}
