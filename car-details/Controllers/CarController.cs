@@ -14,7 +14,7 @@ namespace car_details.Controllers
     public class CarController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<string> Get(string registration)
+        public ActionResult Get(string registration)
         {
             String requestUrlTemplate = "https://beta.check-mot.service.gov.uk/trade/vehicles/mot-tests?registration={0}";
             String requestUrl = String.Format(requestUrlTemplate, registration);
@@ -29,6 +29,7 @@ namespace car_details.Controllers
             {
                 WebRequest request = WebRequest.Create(requestUrl);
                 request.Headers.Add("x-api-key", mot_api_key);
+                request.Headers.Add("Accept", "application/json+v6");
 
                 using (WebResponse webResponse = request.GetResponse())
                 {
@@ -36,13 +37,16 @@ namespace car_details.Controllers
                     string responseStr = reader.ReadToEnd();
                     reader.Close();
 
-                    return responseStr;
+                    return Content(responseStr, "application/json");
                 }
             }
             catch (WebException exp)
             {
                 using (HttpWebResponse response = (HttpWebResponse)exp.Response)
                 {
+                    // If we receive a 404 error it's probably because the license
+                    // plate doesn't exist. Any other error indicates an issue with our
+                    // application (e.g. invalid key) so we return a 500 error to the user.
                     if (response.StatusCode == HttpStatusCode.NotFound)
                     {
                         return NotFound();
