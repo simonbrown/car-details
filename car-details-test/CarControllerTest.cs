@@ -3,23 +3,21 @@ using Xunit;
 using car_details.Controllers;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Frameworks;
-
+using System.Text.Json;
 
 namespace car_details_test
 {
-    public class UnitTest1
+    public class CarControllerTest
     {
         [Fact]
-        public void Test1()
+        public void JsonResponseTest()
         {
             CarController carController = new CarController();
             ActionResult<string> result = carController.Get("YC08JWU");
 
-            Object[] data = JsonConvert.DeserializeObject<Object[]>(result.Value);
-
-            Console.WriteLine(data[0]);
-
-            //Xunit.Assert.Equal(data[0]["registration"], "YC08JWU");
+            JsonDocument document = JsonDocument.Parse(result.Value);
+            
+            Assert.NotEqual(0, document.RootElement.GetArrayLength());
         }
     }
 }
